@@ -11,7 +11,7 @@ let s:col            = {}
 let s:col.none       = ['NONE', 'NONE']
 let s:col.background = ['#E2DBC8', 0]
 let s:col.darker_bg = ['#D8CCB4', 0]
-let s:col.darkest_bg = ['#D0BD97', 0]
+" let s:col.black_bg = ['#D0BD97', 0]
 let s:col.black_bg = ['#C0A886', 0]
 let s:col.blacker_bg = ['#a08866', 0]
 
@@ -73,14 +73,14 @@ endfunction
 " Highlights {{{
 call s:HL('InfoMsg',         'black', 'blue_bg')
 call s:HL('Normal',          'black', 'background')
-call s:HL('NormalFloat',     'black', 'darkest_bg')
-call s:HL('NonText',         'gray',    'background')
-call s:HL('EndOfBuffer',     'darker_bg')
-call s:HL('LineNr',          'gray',    'darker_bg')
-call s:HL('FoldColumn',      'darkest_bg', 'gray')
-call s:HL('Folded',          'gray',  'darker_bg')
+call s:HL('NormalFloat',     'black', 'black_bg')
+call s:HL('NonText',         'brown_fg',    'background')
+call s:HL('EndOfBuffer',     'brown_fg', 'background')
+call s:HL('LineNr',          'brown_fg',    'black_bg')
+call s:HL('FoldColumn',      'black_bg', 'gray')
+call s:HL('Folded',          'gray',  'black_bg')
 call s:HL('MatchParen',      'red',    'none',       'bold')
-call s:HL('SignColumn',      'darker_bg',  'darker_bg')
+call s:HL('SignColumn',      'black_bg',  'black_bg')
 call s:HL('Comment',         'gray',    'none')
 call s:HL('Conceal',         'red',      'none')
 call s:HL('Constant',        'violet',   'none')
@@ -93,8 +93,8 @@ call s:HL('Statement',       'black',      'none',       'bold')
 call s:HL('Todo',            'blue', 'none', 'bold,underline')
 call s:HL('Type',            'blue',       'none',       'none')
 call s:HL('Underlined',      'brown',   'none')
-call s:HL('Pmenu',           'brown_fg', 'darkest_bg')
-call s:HL('PmenuSbar',       'darkest_bg', 'darkest_bg')
+call s:HL('Pmenu',           'brown_fg', 'black_bg')
+call s:HL('PmenuSbar',       'black_bg', 'black_bg')
 call s:HL('PmenuSel',        'black', 'black_bg', 'bold')
 call s:HL('PmenuThumb',      'brown' , 'black_bg')
 call s:HL('ErrorMsg',        'black',      'red_bg',       'none')
@@ -107,13 +107,13 @@ call s:HL('TabLineFill',     'black', 'darker_bg',   'none')
 call s:HL('TabLineSel',      'black', 'black_bg', 'bold')
 call s:HL('Cursor',          'none',       'black')
 call s:HL('CursorColumn',    'none',       'darker_bg')
-call s:HL('CursorLineNr',    'orange',    'darker_bg')
+call s:HL('CursorLineNr',    'orange',    'black_bg')
 call s:HL('CursorLine',      'none',       'darker_bg',   'none')
-call s:HL('StatusLine',      'black_bg', 'black')
+call s:HL('StatusLine',      'black_bg', 'brown_fg')
 call s:HL('StatusLineNC',    'darker_bg',     'gray')
-call s:HL('Visual',          'none',       'darkest_bg')
+call s:HL('Visual',          'none',       'black_bg')
 call s:HL('VisualNOS',       'black', 'background')
-call s:HL('VertSplit',       'darkest_bg',  'darkest_bg')
+call s:HL('VertSplit',       'black_bg',  'black_bg')
 call s:HL('WildMenu',        'black', 'background')
 call s:HL('Function',        'brown',   'none',       'none')
 call s:HL('SpecialKey',      'orange',    'none')
@@ -247,6 +247,6 @@ if has('nvim')
   let g:terminal_color_14 = s:col.blue_bg[0]
 
   let g:terminal_color_7 = s:col.darker_bg[0]
-  let g:terminal_color_15 = s:col.darkest_bg[0]
+  let g:terminal_color_15 = s:col.black_bg[0]
 endif
 " }}}
