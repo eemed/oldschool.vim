@@ -24,6 +24,7 @@ let s:col.black = ['#000000', 0]
 let s:col.violet = ['#652764', 0]
 let s:col.orange = ['#cD5300', 0]
 let s:col.gray = ['#72777d', 0]
+let s:col.brown_fg = ['#442b18', 0]
 
 let s:col.blue_bg = ['#AFEEEE',0]
 let s:col.green_bg = ['#56E156',0]
@@ -92,7 +93,7 @@ call s:HL('Statement',       'black',      'none',       'bold')
 call s:HL('Todo',            'blue', 'none', 'bold,underline')
 call s:HL('Type',            'blue',       'none',       'none')
 call s:HL('Underlined',      'brown',   'none')
-call s:HL('Pmenu',           'black', 'darkest_bg')
+call s:HL('Pmenu',           'brown_fg', 'darkest_bg')
 call s:HL('PmenuSbar',       'darkest_bg', 'darkest_bg')
 call s:HL('PmenuSel',        'black', 'black_bg', 'bold')
 call s:HL('PmenuThumb',      'brown' , 'black_bg')
