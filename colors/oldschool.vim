@@ -157,7 +157,7 @@ hi link HelpCommand              Statement
 hi link HelpExample              Statement
 hi link Include                  PreProc
 hi link Keyword                  Statement
-hi link Label                    Statement
+hi link Label                    Constant
 hi link Macro                    PreProc
 hi link Number                   Constant
 hi link PreCondit                PreProc
