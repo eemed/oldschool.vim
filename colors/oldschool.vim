@@ -98,7 +98,7 @@ call s:HL('PmenuSbar',       'black_bg', 'black_bg')
 call s:HL('PmenuSel',        'black', 'yellow_bg', 'bold')
 call s:HL('PmenuThumb',      'brown' , 'black_bg')
 call s:HL('ErrorMsg',        'black',      'red_bg',       'none')
-call s:HL('ModeMsg',         'orange',    'none')
+call s:HL('ModeMsg',         'black',    'none')
 call s:HL('MoreMsg',         'brown',   'none')
 call s:HL('Question',        'black', 'none')
 call s:HL('WarningMsg',      'black',      'yellow_bg')
@@ -107,7 +107,7 @@ call s:HL('TabLineFill',     'black', 'darker_bg',   'none')
 call s:HL('TabLineSel',      'black', 'black_bg', 'bold')
 call s:HL('Cursor',          'none',       'black')
 call s:HL('CursorColumn',    'none',       'darker_bg')
-call s:HL('CursorLineNr',    'orange',    'black_bg')
+call s:HL('CursorLineNr',    'black',    'black_bg')
 call s:HL('CursorLine',      'none',       'darker_bg',   'none')
 call s:HL('StatusLine',      'black_bg', 'brown_fg')
 call s:HL('StatusLineNC',    'darker_bg',     'gray')
@@ -135,6 +135,7 @@ call s:HL('htmlArg',         'brown',   'none')
 call s:HL('IncSearch',  'black', 'yellow', 'bold')
 call s:HL('Search',     'black', 'yellow', 'bold')
 call s:HL('Substitute', 'black', 'yellow', 'bold')
+call s:HL('Label',      'orange', 'none', 'bold')
 call s:HL('SpellBad',   'red',   'none',       'bold,underline')
 call s:HL('SpellCap',   'red',   'none',       'bold,underline')
 call s:HL('SpellLocal', 'red', 'none',       'bold,underline')
@@ -157,7 +158,6 @@ hi link HelpCommand              Statement
 hi link HelpExample              Statement
 hi link Include                  PreProc
 hi link Keyword                  Statement
-hi link Label                    Constant
 hi link Macro                    PreProc
 hi link Number                   Constant
 hi link PreCondit                PreProc
