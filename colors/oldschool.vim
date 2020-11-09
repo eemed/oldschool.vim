@@ -206,24 +206,6 @@ hi link LspDiagnosticsInformationSign         InfoMsg
 hi link LspDiagnosticsInformationSignFloating PMenu
 " }}}
 
-" Fzf
-if get(g:, 'sitruuna_fzf', 1) == 1
-  let g:fzf_colors =
-        \ { 'fg':    ['fg', 'Normal'],
-        \ 'bg':      ['bg', 'Normal'],
-        \ 'hl':      ['fg', 'Type', 'Type'],
-        \ 'fg+':     ['fg', 'Normal'],
-        \ 'bg+':     ['bg', 'Normal'],
-        \ 'hl+':     ['fg', 'Type'],
-        \ 'info':    ['fg', 'PreProc'],
-        \ 'border':  ['fg', 'Ignore'],
-        \ 'prompt':  ['fg', 'DiffAdded'],
-        \ 'pointer': ['fg', 'Function'],
-        \ 'marker':  ['fg', 'Keyword'],
-        \ 'spinner': ['fg', 'Label'],
-        \ 'header':  ['fg', 'Comment'] }
-endif
-
 if has('nvim')
   let g:terminal_color_0 = s:col.black[0]
   let g:terminal_color_8 = s:col.gray[0]
