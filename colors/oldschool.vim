@@ -12,6 +12,7 @@ let s:col.none       = ['NONE', 'NONE']
 let s:col.background = ['#E2DBC8', 0]
 let s:col.darker_bg = ['#D8CCB4', 0]
 " let s:col.black_bg = ['#D0BD97', 0]
+let s:col.darkest_bg = ['#D0BD97', 0]
 let s:col.black_bg = ['#C0A886', 0]
 let s:col.blacker_bg = ['#a08866', 0]
 
@@ -73,7 +74,7 @@ endfunction
 " Highlights {{{
 call s:HL('InfoMsg',         'black', 'blue_bg')
 call s:HL('Normal',          'black', 'background')
-call s:HL('NormalFloat',     'black', 'black_bg')
+call s:HL('NormalFloat',     'black', 'darkest_bg')
 call s:HL('NonText',         'brown_fg',    'background')
 call s:HL('EndOfBuffer',     'brown_fg', 'background')
 call s:HL('LineNr',          'brown_fg',    'black_bg')
@@ -93,8 +94,8 @@ call s:HL('Statement',       'black',      'none',       'bold')
 call s:HL('Todo',            'blue', 'none', 'bold,underline')
 call s:HL('Type',            'blue',       'none',       'none')
 call s:HL('Underlined',      'brown',   'none')
-call s:HL('Pmenu',           'brown_fg', 'black_bg')
-call s:HL('PmenuSbar',       'black_bg', 'black_bg')
+call s:HL('Pmenu',           'brown_fg', 'darkest_bg')
+call s:HL('PmenuSbar',       'black_bg', 'darkest_bg')
 call s:HL('PmenuSel',        'black', 'yellow_bg', 'bold')
 call s:HL('PmenuThumb',      'brown' , 'black_bg')
 call s:HL('ErrorMsg',        'black',      'red_bg',       'none')
@@ -109,8 +110,8 @@ call s:HL('Cursor',          'none',       'black')
 call s:HL('CursorColumn',    'none',       'darker_bg')
 call s:HL('CursorLineNr',    'black',    'black_bg')
 call s:HL('CursorLine',      'none',       'darker_bg',   'none')
-call s:HL('StatusLine',      'blacker_bg', 'black')
-call s:HL('StatusLineNC',    'black_bg',     'gray')
+call s:HL('StatusLine',      'black_bg', 'black')
+call s:HL('StatusLineNC',    'darker_bg',     'gray')
 call s:HL('Visual',          'none',       'black_bg')
 call s:HL('VisualNOS',       'black', 'background')
 call s:HL('VertSplit',       'black_bg',  'black_bg')
